@@ -1,0 +1,24 @@
+gphoto_renamer.py - w edytorze lub konsoli
+gpth_corrected.py z konsoli -i input dir -o output dir
+digikam - szukanie duplikatów ustawione na 97%
+rsync -ta FULL/. MOD - kopiuje folder full do mod bez zmiany dat
+jpegoptim -p -m85 *.jpg - w każdym folderze, zachowuje daty
+
+
+3. Narzędzie z GUI: HandBrake
+
+Jeśli nie chcesz walczyć z konsolą przy wideo, zainstaluj HandBrake (sudo apt install handbrake).
+
+    Wrzuć pliki masowo (Open Source).
+
+    Wybierz preset "Web Optimized".
+
+    W zakładce "Video" ustaw kodek na H.265 i suwak "Constant Quality" na ok. 24-26.
+
+    W ustawieniach programu możesz zaznaczyć opcję zachowywania dat źródłowych (choć działa to różnie, lepiej sprawdzić).
+
+Porównanie metod optymalizacji wideo
+Metoda	Zysk miejsca	Czas operacji	Zachowanie jakości
+Faststart / Strip Metadata	1-5%	Błyskawiczny	100% (Bit-perfect)
+Konwersja H.264 -> H.265	40-60%	Wolny (obciąża CPU)	Niemal niemożliwe do odróżnienia
+Zmiana rozdzielczości (np. 4K -> 1080p)	70-80%	Średni	Widoczne na dużym TV, OK na telefonie

@@ -362,7 +362,7 @@ def main():
         except:
             logger.debug(f"Couldn't open json file {json_file}")
             print("error 3")
-            _sys.exit()
+            #_sys.exit()
             raise FileNotFoundError(f"Couldn't find json for file: {file}")
         
         
